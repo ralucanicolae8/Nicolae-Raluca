@@ -1,5 +1,5 @@
 hold on; %aceasta functie asigura reprezentarea tuturor semnalelor componente pe aceeasi figura
-title('b)Rezolutia temporara de 2ms')
+title('c)Rezolutia temporara de 2ms')
 %folosim fct rand care ne alege aleator in numar din intervalul [0,1]
 r1=rand(1);
 r2=rand(1);
