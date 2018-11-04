@@ -1,0 +1,36 @@
+
+t=0:0.002:4;%graficul incepe de la 0 si se termina la 4(2T), afisam 2 perioade
+F=0.5; % F=1/T
+duty=25; %factorul de umplere
+c=0.25; %modulul componentei continu, va fi cu - deoarece semnalul este deplasat in jos
+s=(0.75*square(2*pi*F*t,duty))-c; % pentru a obtine o Avv de 1.5V, inmultim semnalul cu 75%
+subplot(3,1,1) %este afisat in prima treime
+% datele graficului
+plot(t,s),axis([0 4 -1.3 0.8])
+xlabel('t [s]'),ylabel('A [V]')
+title('Semnal dreptunghiular 2ms')
+grid;
+
+%idem pentru celelalte, se schimba doar rezolutia temporara si locul graficului
+
+t=0:0.02:4;
+F=0.5;
+duty=25;
+c=0.25;
+s=(0.75*square(2*pi*F*t,duty))-c;
+subplot(3,1,2)
+plot(t,s),axis([0 4 -1.3 0.8])
+xlabel('t [s]'),ylabel('A [V]')
+title('Semnal dreptunghiular 20ms')
+grid;
+
+t=0:0.2:4;
+F=0.5;
+w=2*pi*F;
+duty=25;
+s=(0.75*square(2*pi*F*t,duty))-c;
+subplot(3,1,3)
+plot(t,s),axis([0 4 -1.3 0.8])
+xlabel('t [s]'),ylabel('A [V]')
+title('Semnal dreptunghiular 200ms')
+grid;
