@@ -1,29 +1,12 @@
-hold on%folosesc aceasta functie pentru a lipi graficele
-xlabel('t [s]'),ylabel('A [V]')
+hold on; %folosesc aceasta functie pentru a lipi graficele
 title('a)Rezolutia temporara de 200ms')
-%x=0;y variaza 
-y=0:-0.2:-1;
-x=y*0;
-plot(x,y)
-%y=-1,x variaza
-x = 0: 0.2: 0.25;
-y = x*0-1;
-plot(x, y)
-%x=0.25;y variaza 
-y=-1:0.2:1;
-x=y*0+1/4;
-plot(x,y)
-%y=1;x variaza
-x = 1/4:0.2:1/2;
-y=1+0*x;
-plot(x,y)
-%x=1/2; y variaza 
-y=1:-0.2:-1;
-x=y*0+1/2;
-plot(x,y)
-%y=-1;x variaza
-x = 0.5:0.2:0.75;
-y=-1+0*x;
-plot(x,y)
-grid
-axis([-0.05 0.7 -1.25 1.25])
+r1=rand(1); %nivelele maxime sunt -1 si 1;folosim fct rand care ne alege aleator in numar din intervalul [0,1]
+r2=rand(1);
+t=0:0.2:0.25;
+%folosim duty 100% pentru a ramane un nivel constant
+x1=r1*square(2*pi*4*t,100);
+plot(t,x1);
+t=-0.25:0.2:0;
+x2=-r2*square(2*pi*4*t,100);
+plot(t,x2)
+xlabel('t[s]'),ylabel('A[V]')
