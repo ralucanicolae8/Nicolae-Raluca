@@ -1,0 +1,29 @@
+hold on%folosesc aceasta functie pentru a lipi graficele
+xlabel('t [s]'),ylabel('A [V]')
+title('a)Rezolutia temporara de 20ms')
+%x=0;y variaza 
+y=0:-0.02:-1;
+x=y*0;
+plot(x,y)
+%y=-1,x variaza
+x = 0: 0.02: 0.25;
+y = x*0-1;
+plot(x, y)
+%x=0.25;y variaza 
+y=-1:0.02:1;
+x=y*0+1/4;
+plot(x,y)
+%y=1;x variaza
+x = 1/4:0.02:1/2;
+y=1+0*x;
+plot(x,y)
+%x=1/2; y variaza 
+y=1:-0.02:-1;
+x=y*0+1/2;
+plot(x,y)
+%y=-1;x variaza
+x = 0.5:0.02:0.75;
+y=-1+0*x;
+plot(x,y)
+grid
+axis([-0.05 0.7 -1.25 1.25])
