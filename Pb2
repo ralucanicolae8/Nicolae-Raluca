@@ -1,7 +1,7 @@
 t=0:0.002:10;
 F=0.2;%F=1/T
 c=0.5;%modulul componentei continue, va fi cu - deoarece semnalul este deplasat in jos
-y=1.5*sawtooth(2*pi*F*t,0.5)-c;% pentru a obtine o Avv de 1.5V, inmultim semnalul cu 1.5
+y=1.5*sawtooth(2*pi*F*t)-c;% pentru a obtine o Avv de 1.5V, inmultim semnalul cu 1.5
 subplot(3,1,1)%este afisat in prima treime
 % datele graficului
 plot(t,y),axis([0 10 -2.5 1.5])
@@ -13,7 +13,7 @@ grid;
 t=0:0.02:10;
 F=0.2;
 c=0.5;
-y=1.5*sawtooth(2*pi*F*t,0.5)-c;
+y=1.5*sawtooth(2*pi*F*t)-c;
 subplot(3,1,2)
 plot(t,y),axis([0 10 -2.5 1.5])
 xlabel('t [s]'),ylabel('A [V]')
@@ -23,7 +23,7 @@ grid;
 t=0:0.2:10;
 F=0.2;
 c=0.5;
-y=1.5*sawtooth(2*pi*F*t,0.5)-c;
+y=1.5*sawtooth(2*pi*F*t)-c;
 subplot(3,1,3)
 plot(t,y),axis([0 10 -2.5 1.5])
 xlabel('t [s]'),ylabel('A [V]')
