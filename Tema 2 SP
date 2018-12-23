@@ -42,6 +42,6 @@ axis([-9 9 -0.05 0.55])% delimitarea axelor de coordonate
 title('Spectrul de Amplitudini');
 hold off
 % Cu ajutorul seriei Fourier putem arata ca orice semnal poate fi scris ca fiind 
-%o suma finita de semnale elementare, ceea ce face mai usoara reprezentarea grafica a acestora. 
+% o suma finita de semnale elementare, ceea ce face mai usoara reprezentarea grafica a acestuia 
 % In cazul Spectrului de amplitudini am obtinut un grafic cu valori discrete. 
 % Putem observa ca acesta este un grafic simetric fata de fundamentala, A(-k) fiind egal cu A(k).
